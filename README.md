@@ -51,4 +51,10 @@ Just do
 
         awk -f ttt.awk
 
+
+## httpd
+
+An AWK implementation of a very basic Web Service.
+
+
 Enjoy!
