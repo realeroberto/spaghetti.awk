@@ -41,6 +41,11 @@ And the answer is:
 ```
 
 
+## pi-by-viete
+
+Calculates an approximation of PI by means of Viète's formula
+
+
 ## ttt
 
 An implementation of the classical Tic-Tac-Toe game, based on von Neumann's [Minimax algorithm](http://en.wikipedia.org/wiki/Minimax).
