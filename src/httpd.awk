@@ -12,16 +12,19 @@
 BEGIN {
     RS = ORS = "\r\n"
     HttpService = "/inet/tcp/8080/0/0"
+    HttpRoot = "/var/www/html"
 
-    Hello = "<HTML><HEAD>" \
-    "<TITLE>A Famous Greeting</TITLE></HEAD>" \
-    "<BODY><H1>Hello, world</H1></BODY></HTML>"
+    file = HttpRoot "/index.html"
+    stream = ""
+    while (( getline line < file ) > 0)
+        stream = stream "\r\n" line
+    close(file)
 
-    Len = length(Hello) + length(ORS)
+    Len = length(stream) + length(ORS)
 
     print "HTTP/1.0 200 OK"          |& HttpService
     print "Content-Length: " Len ORS |& HttpService
-    print Hello                      |& HttpService
+    print stream                     |& HttpService
 
     while ((HttpService |& getline) > 0)
         continue;
