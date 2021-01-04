@@ -41,6 +41,11 @@ And the answer is:
 ```
 
 
+## httpd
+
+An AWK implementation of a very basic web server.
+
+
 ## pi-by-viete
 
 Calculates an approximation of PI by means of Viète's formula
@@ -55,11 +60,6 @@ An implementation of the classical Tic-Tac-Toe game, based on von Neumann's [Min
 Just do
 
         awk -f ttt.awk
-
-
-## httpd
-
-An AWK implementation of a very basic Web Service.
 
 
 Enjoy!
