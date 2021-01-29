@@ -3,6 +3,11 @@
 A loose collection of short programs in [AWK](https://en.wikipedia.org/wiki/AWK).
 
 
+## Rationale
+
+Exploring the possibilities of a classical tool in the Unix world.
+
+
 ## chinese
 
 An implementation of the [Chinese remainder theorem](https://en.wikipedia.org/wiki/Chinese_remainder_theorem).
